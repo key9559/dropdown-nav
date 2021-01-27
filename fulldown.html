@@ -21,10 +21,22 @@
               </a>
             </div>
             <nav id="my-nav">
-              <ul class="dep1-wrap">
-                <li class="dep1">
-                  <a href="#" class="drop1">menu1</a>
-                  <div class="menu1-dep2-wrapper">
+              <ul class="dep1-wrap full-down">
+                <li class="dep1 1">
+                  <a href="#" class="drop1 1">menu1</a>
+                </li>
+                <li class="dep1 2">
+                  <a href="#" class="drop1 2">menu2</a>
+                </li>
+                <li class="dep1 3">
+                  <a href="index.html" class="drop1 3">index</a>
+                </li>
+                <li class="dep1 4">
+                  <a href="fulldown.html" class="drop1 4">fulldown</a>
+                </li>
+                <li class="dep2-wrapper">
+                  <!-- menu1-dep2-wrapper의 개수는 dep1의 개수와 같아야함 -->
+                  <div class="menu1-dep2-wrapper 1">
                     <ul class="dep2-wrap">
                       <li class="dep2">
                         <a href="#" class="drop2">menu1-1</a>
@@ -44,10 +56,7 @@
                       </li>
                     </ul>
                   </div>
-                </li>
-                <li class="dep1">
-                  <a href="#" class="drop1">menu2</a>
-                  <div class="menu1-dep2-wrapper">
+                  <div class="menu1-dep2-wrapper 2">
                     <ul class="dep2-wrap">
                       <li class="dep2">
                         <a href="#" class="drop2">menu2-1</a>
@@ -67,9 +76,17 @@
                       </li>
                     </ul>
                   </div>
-                </li>
-                <li class="dep1">
-                  <a href="fulldown.html" class="drop1">fulldown</a>
+                  <div class="menu1-dep2-wrapper 3"></div>
+                  <div class="menu1-dep2-wrapper 4">
+                    <ul class="dep2-wrap">
+                      <li class="dep2">
+                        <a href="#" class="drop2">fulldown1</a>
+                      </li>
+                      <li class="dep2">
+                        <a href="#" class="drop2">fulldown2</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -81,5 +98,19 @@
         </div>
       </header>
     </div>
+    <script>
+      dep2Parent = document.querySelector(".dep2-wrapper");
+      dep2 = dep2Parent.children;
+      dep2Count = dep2Parent.childElementCount;
+
+      dep1 = document.querySelectorAll(".dep1");
+
+      for (i = 0; i < dep2Count; i++) {
+        dep1Child = dep1[i].children;
+        dep2[i].addEventListener("mouseover", function () {
+          dep1Child.style.color = "red";
+        });
+      }
+    </script>
   </body>
 </html>
