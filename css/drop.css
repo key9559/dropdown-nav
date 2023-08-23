@@ -24,21 +24,14 @@ a {
   height: 60px;
   border-bottom: 1px solid #ddd;
 }
-
 #my-hd .l-center {
   height: 100%;
 }
 
 .hd-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
 }
 
@@ -46,7 +39,6 @@ a {
   height: 40px;
   border: 1px solid #ddd;
 }
-
 .logo-area img {
   height: 100%;
   width: auto;
@@ -57,41 +49,26 @@ a {
 }
 
 .dep1-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
 }
 
 .dep1 {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 10em;
   height: 100%;
 }
-
 .dep1 .drop1 {
   padding: 0 15px;
 }
-
 .dep1:hover .drop1 {
   color: darkgray;
 }
-
 .dep1:hover .menu1-dep2-wrapper {
   display: block;
 }
@@ -100,8 +77,7 @@ a {
   position: absolute;
   top: 100%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   display: none;
   padding: 20px 0;
   border: 1px solid #ddd;
@@ -113,7 +89,6 @@ a {
 .dep2 .drop2 {
   line-height: 1.5;
 }
-
 .dep2:hover .drop2 {
   color: darkgray;
 }
@@ -121,60 +96,42 @@ a {
 .dep3 .drop3 {
   line-height: 1.3;
 }
-
 .dep3:hover .drop3 {
   color: darkgray;
 }
 
 .menuall-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border: 1px solid #ddd;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   cursor: pointer;
 }
 
 .full-down {
   position: relative;
 }
-
 .full-down .dep2-wrapper {
   position: absolute;
   top: 100%;
   left: 0;
   display: none;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   border: 1px solid #ddd;
   border-top: 0;
 }
-
 .full-down .menu1-dep2-wrapper {
   position: static;
   display: block;
   border-width: 0;
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
   width: 10em;
 }
-
 .full-down:hover .dep2-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
+}/*# sourceMappingURL=drop.css.map */

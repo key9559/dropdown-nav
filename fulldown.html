@@ -98,19 +98,5 @@
         </div>
       </header>
     </div>
-    <script>
-      dep2Parent = document.querySelector(".dep2-wrapper");
-      dep2 = dep2Parent.children;
-      dep2Count = dep2Parent.childElementCount;
-
-      dep1 = document.querySelectorAll(".dep1");
-
-      for (i = 0; i < dep2Count; i++) {
-        dep1Child = dep1[i].children;
-        dep2[i].addEventListener("mouseover", function () {
-          dep1Child.style.color = "red";
-        });
-      }
-    </script>
   </body>
 </html>
